@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    
+
+  }
+  .form-container {
+    border: 1px solid #9BBEC8;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(65% - 40px);     
+
+    width: 50%;
+    padding: 2rem;
+    /* background-color: #f4f7fb; */
+    /* box-shadow: rgba(109, 109, 109, 0.1) 0px 0px 30px 0px; */
+    /* border-radius: 8px; */
+    
+  }
+  .data-container {
+    margin: 30px;
+    width: 50%;
+    /* height: 60vh; */
+    overflow: auto;
+    margin-right: 2rem;
+    /*background-image: url("https://source.unsplash.com/random");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #9BBEC8;
+    border-radius: 10px;
+    /* height: 100vh;
+     */
+  }
+ 
+  
+@media screen and (max-width: 960px){
+    .container{flex-direction: column;}
+    .form-container{width: 100%;margin-right: 0;}
+    .data-container{height:auto;}
+    }
+#registeredData{
+    font-weight:lighter;
+    vertical-align: bottom;    
+    border: 1px solid #5a5c5c;
+    border-radius: 5px;
+    margin-top: 25px;  
+    background-color: #E5E1DA;  
+    padding: 40px;
+    letter-spacing: 1px;
+    line-height: 5px;
+}
+input{
+    cursor: pointer;
+    border-radius: 8px;
+}
+h1{    
+    display: block;
+    margin: 0;
+    padding: 0;
+    color:#5a5c5c;
+    text-align: center;
+    border: 1px solid #92C7CF;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    background-color:#92C7CF ;
+
+    }
+
+@media (max-width: 768px) {
+    .container {
+    flex-direction: column;
+    }
+
+    .form-container,
+    .data-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-control,
+    #submit {
+        font-size: 0.9rem;
+    }
+}
+
+#submit:hover {
+    background-color: #ff6600;
+}
+
+#submit:active {
+    background-color: #a84803;
+}
+
+body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
+@keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+        
+body{
+    background-color: #9BBEC8;
+}
+h2{
+    font-family:sans-serif;
+    font-size: 14pt;
+    color:black;
+    text-decoration: underline;
+    margin-left: 30px;
+    margin-bottom: 20px;
+
+}
+#submit{
+    width: 50%;
+    height: 30px;
+    margin-right: 15px;
+}
+#submit:hover{
+    background-color:darkorange;
+
+}
+* {
+    box-sizing: border-box;}
